@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Digital StopWatch</title>
+</head>
+<style>
+    body{
+        background: linear-gradient(to left, #607d8b,#d459cb);
+        color: cornsilk;
+        text-align: center;
+        margin-top: 150px;
+        
+        
+    }
+    .score{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+    h1{
+        width: 170px;
+        height: 200px;
+        
+        background-color:#fff;
+        color: black;
+       justify-content: space-between;
+       margin: 20px;
+        display: flex;
+        flex-direction: row;
+      flex-wrap: wrap;
+       padding: 70px;
+       border-radius: 15px;
+       box-shadow:5px 5px darkgray;
+    }
+   h2{
+       margin: 50px;
+       color:black;
+       font-size: large 70px;
+       font-style: italic;
+   }
+   .btn-primary{
+       width: 140px;
+       height: 50px;
+       margin: 15px;
+       background-color: black !important;
+       color: cornsilk !important;
+   }
+   
+</style>
+<body>
+    <div><h2>MyCreativeStopWatch</h2></div>
+    <div class="score">
+        <h1 class="co1" id="min">00</h1>
+        <h1 class="co1" id="sec">00</h1>
+        <h1 class="co1" id="milisec">00</h1>
+    </div>
+    <div>
+       <button class="btn-primary" onclick="start()">Start</button>
+       <button class="btn-primary" onclick="pause()">Pause</button>
+       <button class="btn-primary" onclick="reset()">Reset</button>
+    </div>
+
+    <script src="app.js">
+   
+  
+    </script>
+</body>
+</html>
